@@ -1,0 +1,22 @@
+package com.tests;
+
+//Program to give indices of elements which gives addition result equal to target
+public class TargetAdditionIndices
+{
+	public static void main(String []args)
+	{
+		int array1[]= {10,38,5,7,15,12,25};
+		int target=25;
+		for(int i=0;i<array1.length;i++)
+		{
+			for(int j=i+1;j<array1.length;j++)
+			{
+				if(array1[i]+array1[j]==target)
+				{
+					System.out.println(i+" , "+j);
+					return;
+				}
+			}
+		}
+	}
+}
